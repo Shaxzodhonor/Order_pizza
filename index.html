@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1 text-center m-0 mt-2 mb-3">Pitsa buyurtma qilish</h1>
+        <div class="row">
+            <div class="col-2"></div>
+            <!-- start form section -->
+            <div class="col-5">
+                <form  method="POST" class="js-form" id="form-id" action="https:echo.htmlacademy.ru">
+                    <fieldset class="js-select-fieldset">
+                        <legend class="fs-4 m-0" style="font-weight: 500;">Noni qanday bo'sin?</legend>
+                    </fieldset>
+
+                    <fieldset class="js-size-fieldset mt-4">
+                        <legend class="fs-4 m-0" style="font-weight: 500;">Kattaligi</legend>
+                    </fieldset>
+                   
+                    <fieldset class="w-75 d-flex flex-wrap js-fieldset-over-additions mt-4">
+                        <legend class="fs-4 m-0" style="font-weight: 500;">Ustiga nima solaylik?</legend>
+                    </fieldset> 
+
+                    <fieldset class="w-75 d-flex flex-wrap js-fieldset-additions mt-3">
+                        <legend class="fs-4 m-0" style="font-weight: 500;">Qo'shimchalar</legend>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- end form section -->
+            <div class="col-1"></div>
+            <!-- start display section -->
+            <div class="col-4 border-start border-2 border-dark">
+                <!-- display type of bread -->
+                <div class="fs-5 m-0 mb-1" style="font-weight: 500;">Noni: <span class="js-type-bread fs-6 fw-normal"></span></div>
+               
+                <!-- display size of bread -->
+                <div class="fs-5 m-0 mb-1" style="font-weight: 500;">Kattaligi : <span class="js-size-bread fs-6 fw-normal"></span></div>
+              
+                <!-- display over additions -->
+                <div>
+                    <span class="fs-5" style="font-weight: 500;">Ustida :</span>
+                    <ul class="js-over-addition list-unstyled m-2">
+                    </ul>
+                </div>
+               
+                <!-- display additions -->
+                <div class="mb-2">
+                    <span class="fs-5" style="font-weight: 500;">Qo'shimcha :</span>
+                    <ul class="js-addition list-unstyled">
+                    </ul>
+                </div>
+                
+                <button class="btn btn-danger btn-lg" type="submit" form="form-id"> Buyurtma berish </button>
+            </div>  <!-- finish display section -->
+        </div>
+    </div>
+
+    <script src="./bootstrap/js/index.js"></script>
+</body>
+</html>
